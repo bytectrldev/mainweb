@@ -1,11 +1,14 @@
 import './App.css';
+import Landing from './Pages/Landing';
+// import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
+    // <BrowserRouter>
     <div className="App">
-      <h1>Mayur pushed to MAIN</h1>
-      <h1>Shubham @ 8.55PM</h1>
+      <Landing />
     </div>
+    // </BrowserRouter>
   );
 }
 
