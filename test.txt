@@ -1,2 +1,8 @@
+<<<<<<< Updated upstream
 hey sg, this is form nishant-10 
 this should not work
+=======
+hey
+
+HELLOWWW
+>>>>>>> Stashed changes
