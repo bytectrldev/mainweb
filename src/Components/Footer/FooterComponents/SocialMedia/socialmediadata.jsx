@@ -3,10 +3,6 @@ import { FaDiscord, FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 
 const socialmediadata=[
     {
-        links:"#",
-        elements:<FaFacebookF/>
-    },
-    {
         href:"#",
         elements:<FaInstagram/>
     },
