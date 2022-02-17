@@ -12,7 +12,7 @@ const Landing = () => {
       {/* <Routes>
         <Route path="/about" element={<Footer />} />
       </Routes> */}
-      {/* <div className="tp"></div> */}
+      <div className="tp"></div>
       <Footer Theme={Theme} />
     </>
   );
