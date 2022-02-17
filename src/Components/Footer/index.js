@@ -7,9 +7,9 @@ import SocialIcons from './FooterComponents/SocialMedia/SocialIcons';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-const Footer = () => {
+const Footer = (props) => {
   return(
-      <div className='light_theme' style={{minWidth:"320px"}}>
+      <div className={props.Theme ?'light_theme':'dark_theme'} style={{minWidth:"320px"}}>
         <Container>
           <Row className='p-2' xs={2} md={4} lg={6}>
             <Col xs={12} md={6} className="text-center">
