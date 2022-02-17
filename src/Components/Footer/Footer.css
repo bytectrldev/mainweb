@@ -1,3 +1,24 @@
-.footercontainer {
-  background-color: black;
+.footer_socialicons {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.6em;
+  background-color: transparent;
+  margin: 1em;
+  transition: transform ease 300ms;
+}
+
+.logotext {
+  font-size: 1.5em;
+  font-family: sans-serif;
+}
+.footer_socialicons:hover {
+  background-image: linear-gradient(
+    to right,
+    #fc6076,
+    #ff9a44,
+    #ef9d43,
+    #e75516
+  );
+  box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+  transform: translate(0, -5px);
 }
