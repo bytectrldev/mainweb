@@ -1,18 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Navbar.css';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import { BiMoon, BiSun } from 'react-icons/bi';
 
-const Navbar1 = () => {
-  const [Theme, setTheme] = useState(true);
-
+const Navbar1 = (props) => {
   const toggle = () => {
-    Theme ? setTheme(false) : setTheme(true);
+    props.Theme ? props.setTheme(false) : props.setTheme(true);
   };
 
   return (
-    <Navbar collapseOnSelect expand="lg" bg="transperant" variant="light">
-      <Container>
+    <Navbar collapseOnSelect expand="lg" bg="transperant" variant="dark">
+      <Container className="NavContainer">
         <Navbar.Brand href="#home">ByteCtrl</Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -37,7 +35,11 @@ const Navbar1 = () => {
             <Nav.Link href="#meetup">Meetup</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
             <Nav.Link className="themeLink">
-              {Theme ? <BiSun onClick={toggle} /> : <BiMoon onClick={toggle} />}
+              {props.Theme ? (
+                <BiSun onClick={toggle} />
+              ) : (
+                <BiMoon onClick={toggle} />
+              )}
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

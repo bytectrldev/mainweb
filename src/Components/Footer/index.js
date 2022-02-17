@@ -15,11 +15,18 @@ const MainLink = (props) => {
   return <a href={props.link}>{props.element}</a>;
 };
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <div>
       <Container fluid>
-        <Row className="p-2 bg-dark" xs={2} md={4} lg={6}>
+        <Row
+          className={
+            props.Theme ? 'p-2 bg-dark text-light' : 'p-2 bg-light text-dark'
+          }
+          xs={2}
+          md={4}
+          lg={6}
+        >
           <Col xs={12} md={4} className="pt-3">
             <img src={logo} alt="logo" height="50em" />
           </Col>

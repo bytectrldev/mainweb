@@ -1,10 +1,24 @@
-.themeLink {
-  color: black !important;
+.nav-link {
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.themeLink svg {
+  transition: 0.2s;
   font-size: 1.25em;
 }
 
 .themeLink svg:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50px;
-  color: green !important;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.NavContainer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 1;
 }
