@@ -1,9 +1,8 @@
 import React from 'react';
 import '../../Components/Footer/Footer.css';
 import {Container, Row, Col} from 'react-bootstrap';
- import logo from '../../Components/Footer/FooterAssets/bytectrltext.png';
-import { FaDiscord,  FaFacebookF, FaInstagram, FaWhatsapp, } from 'react-icons/fa';
-import { IconContext } from "react-icons";
+import logo from '../../Components/Footer/FooterAssets/bytectrltext.png';
+import SocialIcons from './FooterComponents/SocialMedia/SocialIcons';
 // import Gradient from 'rgt';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,12 +16,7 @@ const Footer = () => {
               <img src={logo} alt='logo' height='50em'/>
             </Col>
             <Col xs={12} md={4} className="text-center">
-            <IconContext.Provider value={{ color: "white", size:"2.8em", className: "global-class-name footer_socialicons" }}>
-              <a href='#'><FaFacebookF/></a>
-              <a href='https://www.instagram.com/bytectrl/'><FaInstagram/></a>
-              <a href='https://discord.gg/9jZ9jg4t'><FaDiscord/></a>
-              <a href='#'><FaWhatsapp/></a>
-            </IconContext.Provider>
+                <SocialIcons/>
             </Col>
             <Col xs={12} md={4} style={{fontSize:"1.5em"}}  className="text-muted text-center">
                 Copyright © 2022 All rights reserved by <span style={{color:'whitesmoke'}}>ByteCtrl</span>.
