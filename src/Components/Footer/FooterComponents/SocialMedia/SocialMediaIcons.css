@@ -4,7 +4,7 @@
   padding: 0.6em;
   background-color: transparent;
   margin: 1em;
-  transition: transform ease 300ms;
+  transition: all ease-in-out 300ms;
 }
 
 .socialicons:hover {

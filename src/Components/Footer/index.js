@@ -16,7 +16,7 @@ const Footer = (props) => {
                 <SocialIcons/>
             </Col>
             <Col xs={12} md={6} className="text-muted copyright_text text-center">
-                Copyright © 2022 All rights reserved by <span>ByteCtrl</span>.
+              Copyright © 2022 All rights reserved by <span>ByteCtrl</span>.
             </Col>
           </Row> 
         </Container>
