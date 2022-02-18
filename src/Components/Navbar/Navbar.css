@@ -1,8 +1,19 @@
 .nav-link {
   transition: 0.2s;
 }
+.nav-link.active {
+  transition: 0.2s;
+  background: var(--maingradient);
+  /* box-shadow: var(--mainboxshadow); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .nav-link:hover {
+  background: var(--maingradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   transform: scale(1.05);
   transition: 0.2s;
 }
@@ -18,7 +29,35 @@
 }
 
 .NavContainer {
-  padding-top: 10px;
-  padding-bottom: 10px;
   z-index: 1;
+  padding: 20px;
+}
+
+.navbarLogo {
+  height: 2em;
+  width: 2em;
+  background: url('./NavbarAssets/logo.png') no-repeat;
+  background-size: 2em 2em;
+}
+.navbarLogo:hover {
+  background: url('./NavbarAssets/logoBS.png') no-repeat;
+  background-size: 2em 2em;
+}
+
+.navbarlogo {
+  background-color: black;
+  height: 3em;
+  width: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  transition: 200ms;
+}
+
+.navbarlogo:hover {
+  transform: scale(1.1);
+  background: var(--maingradient);
+  box-shadow: var(--mainboxshadow);
+  transition: 200ms;
 }
