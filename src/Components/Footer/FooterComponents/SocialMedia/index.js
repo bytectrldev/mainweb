@@ -3,7 +3,7 @@ import socialmediadata from './socialmediadata';
 import { IconContext } from 'react-icons';
 import './SocialMediaIcons.css';
 
-function SocialIcons() {
+function SocialIcons(props) {
   const Icons = () => {
     return socialmediadata.map((data) => {
       return (
@@ -18,10 +18,12 @@ function SocialIcons() {
     <>
       <IconContext.Provider
         value={{
-          color: 'white',
-          size: '2.8em',
+          color: props.color, 
+          size: props.size,
           className: 'global-class-name socialicons',
         }}
+
+        style={{borderColor: props.color  }}
       >
         <Icons />
       </IconContext.Provider>
