@@ -1,21 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Landing.css';
 import Footer from '../../Components/Footer';
 import Navbar1 from '../../Components/Navbar';
-import TeamMember from '../../Components/TeamMember';
+import HeroSection from './LandingComponents/HeroSection';
 // import { Routes, Route } from 'react-router-dom';
 
-const Landing = () => {
-  const [Theme, setTheme] = useState(true);
+const Landing = (props) => {
   return (
     <>
-      <Navbar1 Theme={Theme} setTheme={setTheme} />
+      <Navbar1 Theme={props.Theme} setTheme={props.setTheme} />
       {/* <Routes>
         <Route path="/about" element={<Footer />} />
       </Routes> */}
-      {/* <div className="tp"></div> */}
-      <TeamMember Theme={Theme}/>
-      <Footer Theme={Theme} />
+      <HeroSection Theme={props.Theme} />
+      <Footer Theme={props.Theme} />
     </>
   );
 };

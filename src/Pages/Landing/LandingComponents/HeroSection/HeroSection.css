@@ -1,0 +1,28 @@
+.HeroSection {
+  height: 100%;
+  width: 100%;
+
+  padding-top: 150px;
+  padding-bottom: 800px;
+}
+
+.HeroSection:hover {
+  background: var(--maingradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.BrandName {
+  font-size: 7em;
+  word-break: break-all;
+}
+
+.BrandName:hover {
+  animation: Anim 2s ease 0s 1 normal forwards;
+}
+
+/* @media screen and (max-width: 600px) {
+  .BrandName {
+    display: none;
+  }
+} */
