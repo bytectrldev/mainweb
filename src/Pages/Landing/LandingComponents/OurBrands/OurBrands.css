@@ -1,0 +1,25 @@
+.OurBrandsBG {
+  height: 70vh;
+  background-color: #2d3436;
+}
+
+.OurBrandsContainer {
+  text-align: center;
+}
+
+.OurBrandsHeading {
+  background: var(--maingradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.OurBrandsImg {
+  filter: grayscale(100%);
+  transition: 200ms;
+}
+
+.OurBrandsImg:hover {
+  transition: 200ms;
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}

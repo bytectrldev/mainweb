@@ -40,7 +40,7 @@ body {
   color: black;
 }
 .light {
-  color: white;
+  color: #ced6e0;
 }
 
 .dark:hover {
@@ -52,10 +52,10 @@ body {
 
 @keyframes bganim {
   0% {
-    background-position: 50% 0%;
+    background-position: 50% 100%;
   }
 
   100% {
-    background-position: 50% 100%;
+    background-position: 50% 0%;
   }
 }
