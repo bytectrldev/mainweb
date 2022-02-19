@@ -2,7 +2,7 @@ import React from 'react';
 import '../../Components/Footer/Footer.css';
 import { Container, Row, Col } from 'react-bootstrap';
 // import logo from '../../Components/Footer/FooterAssets/bytectrltext.png';
-import SocialIcons from './FooterComponents/SocialMedia/SocialIcons';
+import SocialIcons from '../Footer/FooterComponents/SocialMedia/index'
 // import Gradient from 'rgt';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
