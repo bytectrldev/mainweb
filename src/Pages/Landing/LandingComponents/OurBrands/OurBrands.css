@@ -1,10 +1,12 @@
 .OurBrandsBG {
-  height: 70vh;
-  background-color: #2d3436;
+  height: 100%;
+  background-color: #101010;
 }
 
 .OurBrandsContainer {
   text-align: center;
+  padding-top: 50px;
+  padding-bottom: 130px;
 }
 
 .OurBrandsHeading {
@@ -16,6 +18,8 @@
 .OurBrandsImg {
   filter: grayscale(100%);
   transition: 200ms;
+  height: 110px;
+  width: 150px;
 }
 
 .OurBrandsImg:hover {

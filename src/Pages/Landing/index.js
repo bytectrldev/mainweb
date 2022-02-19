@@ -4,7 +4,7 @@ import Footer from '../../Components/Footer';
 import Navbar1 from '../../Components/Navbar';
 import HeroSection from './LandingComponents/HeroSection';
 import OurBrands from './LandingComponents/OurBrands';
-// import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 const Landing = (props) => {
   return (
