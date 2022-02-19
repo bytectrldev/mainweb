@@ -16,7 +16,7 @@ function SocialIcons() {
                 className: 'global-class-name socialicons',
               }}
             >
-              <a href={data.href}>{data.elements}</a>
+              <a key={data.id} href={data.href}>{data.elements}</a>
             </IconContext.Provider>
           </>
         );
