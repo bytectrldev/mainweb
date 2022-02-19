@@ -1,16 +1,22 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import './HeroSection.css';
 
-var classname = 'HeroSection container text-center dark';
-var classname1 = 'HeroSection container text-center light';
+var classname = 'HeroSection container dark';
+var classname1 = 'HeroSection container light';
 
 const HeroSection = (props) => {
   return (
-    <div className={props.Theme ? classname1 : classname}>
-      <h4 className="BrandName">
-        <p className="lead">We Are</p>ByteCtrl
-      </h4>
-    </div>
+    <Container className={props.Theme ? classname1 : classname}>
+      <Row>
+        <Col lg className="BrandNameContainer">
+          <h4 className="BrandName">
+            <p className="lead">We Are</p>ByteCtrl
+          </h4>
+        </Col>
+        <Col lg></Col>
+      </Row>
+    </Container>
   );
 };
 
