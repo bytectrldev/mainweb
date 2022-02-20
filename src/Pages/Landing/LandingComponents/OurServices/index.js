@@ -9,7 +9,7 @@ const OurServices = (props) => {
   return (
     <Container fluid className="text-center">
       <Container className={props.Theme ? classname1 : classname}>
-        <ComponentHeading Heading="Our Services" Heading2="What we provide ?" />
+        <ComponentHeading Heading="What we can do for you" Heading2="Our Awesome Service" />
       </Container>
     </Container>
   );
