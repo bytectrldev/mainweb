@@ -16,6 +16,14 @@ const Navbar1 = (props) => {
             <div className="navbarLogo"></div>
           </div>
         </Navbar.Brand>
+        <Nav.Link className="themeLink">
+          {props.Theme ? (
+            <BiSun onClick={toggle} />
+          ) : (
+            <BiMoon onClick={toggle} />
+          )}
+        </Nav.Link>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto"></Nav>
@@ -38,14 +46,6 @@ const Navbar1 = (props) => {
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Nav.Link className="themeLink">
-          {props.Theme ? (
-            <BiSun onClick={toggle} />
-          ) : (
-            <BiMoon onClick={toggle} />
-          )}
-        </Nav.Link>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       </Container>
     </Navbar>
   );
