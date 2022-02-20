@@ -1,0 +1,5 @@
+.ComponentHeading {
+  background: var(--maingradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

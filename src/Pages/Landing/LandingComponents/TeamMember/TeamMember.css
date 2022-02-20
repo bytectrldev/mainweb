@@ -83,6 +83,8 @@
 
 .teamcontainer {
   text-align: center;
+  min-height: 100vh;
+  /* background-color: aliceblue; */
 }
 
 /* .teamcontainer h1 {

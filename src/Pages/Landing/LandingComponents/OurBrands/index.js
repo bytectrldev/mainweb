@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import ComponentHeading from '../ComponentHeading';
 import './OurBrands.css';
 import logo1 from './OurBrandsAssets/1.png';
 import logo2 from './OurBrandsAssets/2.png';
@@ -23,8 +24,10 @@ const OurBrands = (props) => {
           props.Theme ? 'OurBrandsContainer light' : 'OurBrandsContainer dark'
         }
       >
-        <h5 className="OurBrandsHeading">Top Clients</h5>
-        <h1>We worked with brands</h1>
+        <ComponentHeading
+          Heading="Top Clients"
+          Heading2="We worked with brands"
+        />
         <div className="row pt-5">
           <BrandImages logo={logo1} BrandName="Mahalaxmi Sanitary" />
           <BrandImages logo={logo2} BrandName="Sub Property" />
