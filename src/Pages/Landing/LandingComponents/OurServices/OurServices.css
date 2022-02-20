@@ -2,5 +2,9 @@
   min-height: 80vh;
   width: 100%;
   padding-top: 150px;
-  padding-bottom: 250px;
+  padding-bottom: 150px;
+}
+
+.OurServicesBG {
+  background-color: white;
 }
