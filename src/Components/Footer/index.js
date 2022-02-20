@@ -15,7 +15,7 @@ const Footer = (props) => {
       <Container>
         <Row className="p-2" xs={2} md={4} lg={6}>
           <Col xs={12} md={6} className="text-center">
-            <SocialIcons />
+            <SocialIcons size='2.8em' color={props.Theme ? 'white' : 'black'}/>
           </Col>
           <Col xs={12} md={6} className="text-muted copyright_text text-center">
             Copyright © 2022 All rights reserved by <span>ByteCtrl</span>.
