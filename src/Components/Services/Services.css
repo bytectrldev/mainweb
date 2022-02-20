@@ -1,0 +1,96 @@
+.service_card {
+  max-width: 20rem;
+  max-height: 30rem;
+  /* min-width: 20rem;
+    min-height: 30rem; */
+  border: none;
+  position: relative;
+  overflow: hidden;
+  transition: 200ms;
+}
+
+.service_card:hover {
+  transform: scale(1.05);
+  transition: 200ms;
+  border-radius: 0;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardimg {
+  display: block;
+  width: 100%;
+}
+
+.cardbody {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 300ms;
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+.cardbody > * {
+  transform: translateY(20px);
+  transition: transform 300ms;
+}
+
+.cardbody:hover {
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    transparent,
+    #ff9a44
+  );
+  opacity: 1;
+}
+
+.cardbody:hover > * {
+  transform: translateY(0);
+}
+
+.servicename {
+  position: absolute;
+  top: 18rem;
+  left: 1rem;
+}
+
+.servicetype {
+  position: absolute;
+  top: 20rem;
+  left: 1rem;
+  font-size: 13px;
+}
+
+.medialinks {
+  position: absolute;
+  top: 22rem;
+  left: 1rem;
+}
+
+.servicecontainer {
+  text-align: center;
+}
+
+/* .teamcontainer h1 {
+    font-size: 4em;
+  } */
+
+.servicecontainer h5 {
+  background: var(--maingradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
