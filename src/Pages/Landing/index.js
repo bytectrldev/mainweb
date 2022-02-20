@@ -18,7 +18,8 @@ const Landing = (props) => {
       </Routes> */}
       <HeroSection Theme={props.Theme} />
       <OurServices Theme={props.Theme} />
-      <TeamMember Theme={props.Theme} />
+      <TeamMember section="false" Theme={props.Theme} />
+      <TeamMember section="true" Theme={props.Theme} />
       <OurBrands Theme={props.Theme} />
       <Footer Theme={props.Theme} />
     </>

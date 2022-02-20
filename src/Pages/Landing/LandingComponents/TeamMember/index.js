@@ -4,6 +4,7 @@ import './TeamMember.css';
 import SocialIcons from '../../../../Components/Footer/FooterComponents/SocialMedia';
 import TeamData from './TeamData';
 import ComponentHeading from '../ComponentHeading';
+import BButton from '../../../../Components/BButton';
 
 function TeamMember(props) {
   const Team = () => {
@@ -18,7 +19,7 @@ function TeamMember(props) {
                 {data.profession}
               </Card.Text>
               <Row className="medialinks">
-                <SocialIcons page="teamdata" size="2.3em" color="white" />
+                {props.section=="true"?<SocialIcons page="teamdata" size="2.3em" color="white" />:<BButton/>}
               </Row>
             </Card.Body>
           </Card>
