@@ -10,7 +10,7 @@ const OurBrands = (props) => {
   const BrandImages = (propsimg) => {
     return (
       <div className="OurBrandsImgContainer col">
-        <img src={propsimg.logo} class="OurBrandsImg" />
+        <img src={propsimg.logo} className="OurBrandsImg" />
         {/* <h6>{propsimg.BrandName}</h6> */}
       </div>
     );
@@ -23,9 +23,9 @@ const OurBrands = (props) => {
           props.Theme ? 'OurBrandsContainer light' : 'OurBrandsContainer dark'
         }
       >
-        <h5 class="OurBrandsHeading">Top Clients</h5>
+        <h5 className="OurBrandsHeading">Top Clients</h5>
         <h1>We worked with brands</h1>
-        <div class="row pt-5">
+        <div className="row pt-5">
           <BrandImages logo={logo1} BrandName="Mahalaxmi Sanitary" />
           <BrandImages logo={logo2} BrandName="Sub Property" />
           <BrandImages logo={logo3} BrandName="ByteCtrl" />

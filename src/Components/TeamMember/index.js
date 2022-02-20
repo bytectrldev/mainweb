@@ -9,7 +9,7 @@ function TeamMember(props) {
     return TeamData.map((data) => {
       return (
         <div className="col-md card_container">
-          <Card key={data.name} className="tm_card m-3">
+          <Card key={data.id} className="tm_card m-3">
             <Card.Img variant="top" src={data.photo} className="cardimg" />
             <Card.Body className="cardbody">
               <Card.Title className="teamname">{data.name}</Card.Title>
