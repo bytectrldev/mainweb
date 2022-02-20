@@ -1,0 +1,19 @@
+.ServicesCardBody {
+  min-width: 200px;
+  border-radius: 15px;
+  padding: 30px;
+  transition: 200ms;
+}
+
+.ServicesCardBody:hover {
+  cursor: pointer;
+  background-color: #2d3436;
+  color: white;
+  transform: scale(1.025);
+  box-shadow: 1px 1px 40px black;
+  transition: 200ms;
+}
+
+.IconContainer svg {
+  font-size: 4em;
+}
