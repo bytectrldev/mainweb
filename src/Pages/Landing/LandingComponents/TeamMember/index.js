@@ -19,7 +19,7 @@ function TeamMember(props) {
                 {data.profession}
               </Card.Text>
               <Row className="medialinks">
-                {props.section=="true"?<SocialIcons page="teamdata" size="2.3em" color="white" />:<BButton/>}
+                {props.section==="true"?<SocialIcons page="teamdata" size="2.3em" color="white" />:<BButton link={data.btnlink} btnstyle="outline-light" animation=""/>}
               </Row>
             </Card.Body>
           </Card>
@@ -35,7 +35,7 @@ function TeamMember(props) {
           props.Theme ? 'p-5 teamcontainer light' : 'p-5 teamcontainer dark'
         }
       >
-        <ComponentHeading Heading="Our Experts" Heading2="Managing team" />
+        <ComponentHeading Heading={props.section==="true"?"Our Experts":"Our Projects"} Heading2={props.section==="true"?"Managing team":"Some of our Recent Works"} />
         <Row>
           <Team />
         </Row>
