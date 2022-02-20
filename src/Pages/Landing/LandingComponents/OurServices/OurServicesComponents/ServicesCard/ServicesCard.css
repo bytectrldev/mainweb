@@ -7,8 +7,8 @@
 
 .ServicesCardBody:hover {
   cursor: pointer;
-  background-color: #2d3436;
-  color: white;
+  background-color: #dfe6e9;
+  color: #2d3436;
   transform: scale(1.025);
   box-shadow: 1px 1px 40px black;
   transition: 200ms;
