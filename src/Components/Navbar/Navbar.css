@@ -37,11 +37,11 @@
 .navbarLogo {
   height: 2em;
   width: 2em;
-  background: url("./NavbarAssets/logo.png") no-repeat;
+  background: url('./NavbarAssets/logo.png') no-repeat;
   background-size: 2em 2em;
 }
 .navbarLogo:hover {
-  background: url("./NavbarAssets/logoBS.png") no-repeat;
+  background: url('./NavbarAssets/logoBS.png') no-repeat;
   background-size: 2em 2em;
 }
 
