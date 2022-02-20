@@ -1,9 +1,9 @@
 import React from 'react';
 import { Card, Row, Container } from 'react-bootstrap';
 import './TeamMember.css';
-import SocialIcons from '../Footer/FooterComponents/SocialMedia/index';
+import SocialIcons from '../../../../Components/Footer/FooterComponents/SocialMedia';
 import TeamData from './TeamData';
-import ComponentHeading from '../../Pages/Landing/LandingComponents/ComponentHeading';
+import ComponentHeading from '../ComponentHeading';
 
 function TeamMember(props) {
   const Team = () => {
@@ -29,7 +29,11 @@ function TeamMember(props) {
 
   return (
     <div>
-      <Container className="p-5 teamcontainer">
+      <Container
+        className={
+          props.Theme ? 'p-5 teamcontainer light' : 'p-5 teamcontainer dark'
+        }
+      >
         <ComponentHeading Heading="Our Experts" Heading2="Managing team" />
         <Row>
           <Team />
