@@ -1,5 +1,5 @@
 .HeroSection {
-  height: 100%;
+  min-height: 80vh;
   width: 100%;
 
   padding-top: 150px;

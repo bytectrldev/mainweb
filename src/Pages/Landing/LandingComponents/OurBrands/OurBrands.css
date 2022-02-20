@@ -5,7 +5,8 @@
 
 .OurBrandsContainer {
   text-align: center;
-  padding-top: 50px;
+  min-height: 80vh;
+  padding-top: 100px;
   padding-bottom: 130px;
 }
 
