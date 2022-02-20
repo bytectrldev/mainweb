@@ -8,8 +8,8 @@ function TeamMember(props) {
   const Team = () => {
     return TeamData.map((data) => {
       return (
-        <div className="col-md card_container">
-          <Card key={data.name} className="tm_card m-3">
+        <div key={data.id} className="col-md card_container">
+          <Card className="tm_card m-3">
             <Card.Img variant="top" src={data.photo} className="cardimg" />
             <Card.Body className="cardbody">
               <Card.Title className="teamname">{data.name}</Card.Title>

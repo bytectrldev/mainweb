@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Landing Theme={Theme} setTheme={setTheme} class="ALL" />
+        <Landing Theme={Theme} setTheme={setTheme}/>
       </div>
     </BrowserRouter>
   );
