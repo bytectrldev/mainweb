@@ -1,14 +1,15 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import ComponentHeading from '../ComponentHeading';
 import './OurServices.css';
 
-const OurServices = () => {
+const OurServices = (props) => {
   var classname = 'OurServices dark';
   var classname1 = 'OurServices light';
   return (
-    <Container fluid>
+    <Container fluid className="text-center">
       <Container className={props.Theme ? classname1 : classname}>
-        <h1>Our Services</h1>
+        <ComponentHeading Heading="Our Services" Heading2="What we provide ?" />
       </Container>
     </Container>
   );
