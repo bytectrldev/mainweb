@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './HeroSection.css';
 
-var classname = 'HeroSection container dark';
-var classname1 = 'HeroSection container light';
+var classname = 'HeroSection dark';
+var classname1 = 'HeroSection light';
 
 const HeroSection = (props) => {
   return (
