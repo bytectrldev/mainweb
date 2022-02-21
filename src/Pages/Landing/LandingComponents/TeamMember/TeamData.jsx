@@ -9,6 +9,7 @@ const TeamData = [
     name: 'SHUBHAM GAIKWAD',
     profession: 'DEVELOPER',
     instagram: 'https://www.instagram.com/bytectrl/',
+    btnlink:'shubham',
   },
   {
     id:2,
@@ -16,6 +17,7 @@ const TeamData = [
     name: 'NISHANT JOSHI',
     profession: 'DEVELOPER',
     instagram: 'https://www.instagram.com/bytectrl/',
+    btnlink:'nishant',
   },
   {
     id:3,
@@ -23,6 +25,7 @@ const TeamData = [
     name: 'MAYUR GAJULA',
     profession: 'DEVELOPER',
     instagram: 'https://www.instagram.com/bytectrl/',
+    btnlink:'mayur', 
   },
 ];
 
