@@ -1,8 +1,26 @@
 {
-  "person1": [
+  "OurServices": [
     {
-      "first": "Nicole",
-      "last": "Adelstein"
+      "Card": [
+        {
+          "id": 1,
+          "icon": "CgWebsite",
+          "Heading": "Website Development",
+          "description": "A strategic approach to website design and development"
+        },
+        {
+          "id": 2,
+          "icon": "FaGooglePlay",
+          "Heading": "App Development",
+          "description": "Life is too short for ordinary apps."
+        },
+        {
+          "id": 3,
+          "icon": "FaBezierCurve",
+          "Heading": "Business Development",
+          "description": "You’ve got us? You’ve got class."
+        }
+      ]
     }
   ],
   "person2": [
