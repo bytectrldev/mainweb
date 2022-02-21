@@ -2,13 +2,15 @@ import React from 'react';
 import { Card, Row, Container } from 'react-bootstrap';
 import './TeamMember.css';
 import SocialIcons from '../../../../Components/Footer/FooterComponents/SocialMedia';
-import TeamData from './TeamData';
+// import TeamData from './TeamData';
 import ComponentHeading from '../ComponentHeading';
 import BButton from '../../../../Components/BButton';
 
+const rawdata = require('../../../../Test/TestData.json')
+
 function TeamMember(props) {
   const Team = () => {
-    return TeamData.map((data) => {
+    return rawdata.TeamMembers.Team.map((data) => {
       return (
         <div key={data.id} className="col-md card_container">
           <Card className="tm_card m-3">

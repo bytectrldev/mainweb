@@ -1,0 +1,54 @@
+{
+    "OurServices": 
+    {
+      "Card": [
+        {
+          "id": 1,
+          "icon": "CgWebsite",
+          "Heading": "Website Development",
+          "description": "A strategic approach to website design and development"
+        },
+        {
+          "id": 2,
+          "icon": "FaGooglePlay",
+          "Heading": "App Development",
+          "description": "Life is too short for ordinary apps."
+        },
+        {
+          "id": 3,
+          "icon": "FaBezierCurve",
+          "Heading": "Business Development",
+          "description": "You’ve got us? You’ve got class."
+        }
+      ]
+    },
+  "TeamMembers" :
+      {
+        "Team":[
+          {
+              "id":1,
+              "photo": "https://source.unsplash.com/random",
+              "name": "SHUBHAM GAIKWAD",
+              "profession": "DEVELOPER",
+              "instagram": "https://www.instagram.com/bytectrl/",
+              "btnlink":"shubham"
+            },
+            {
+              "id":2,
+              "photo": "https://source.unsplash.com/random",
+              "name": "NISHANT JOSHI",
+              "profession": "DEVELOPER",
+              "instagram": "https://www.instagram.com/bytectrl/",
+              "btnlink":"nishant"
+            },
+            {
+              "id":3,
+              "photo": "https://source.unsplash.com/random",
+              "name": "MAYUR GAJULA",
+              "profession": "DEVELOPER",
+              "instagram": "https://www.instagram.com/bytectrl/",
+              "btnlink":"mayur"
+            }
+          ]
+      }
+}
