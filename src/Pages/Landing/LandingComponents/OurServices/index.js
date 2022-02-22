@@ -37,7 +37,8 @@ const OurServices = (props) => {
 
       return (
         <ServicesCard
-          icon={<Tag />}
+          key={a.id}
+          icon={a.icon}
           Heading={a.Heading}
           description={a.description}
         />

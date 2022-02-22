@@ -17,3 +17,7 @@
 .IconContainer svg {
   font-size: 4em;
 }
+
+.bi {
+  font-size: 3em !important;
+}

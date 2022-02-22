@@ -6,7 +6,7 @@ const ServicesCard = (props) => {
     <div className="ServicesCardContainer col-md">
       <div className="ServicesCardBody text-left">
         <div className="IconContainer">
-          <i class="fa-solid fa-browser"></i>
+          <i className={props.icon}></i>
         </div>
         <h3 className="pt-3">{props.Heading}</h3>
         <p className="lead pt-3 text-muted">{props.description}</p>

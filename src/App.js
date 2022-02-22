@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import Landing from './Pages/Landing';
 import { useState } from 'react';
 
@@ -10,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Landing Theme={Theme} setTheme={setTheme}/>
+        <Landing Theme={Theme} setTheme={setTheme} />
       </div>
     </BrowserRouter>
   );
