@@ -3,23 +3,12 @@ import { Container } from 'react-bootstrap';
 import ComponentHeading from '../ComponentHeading';
 import './OurServices.css';
 import ServicesCard from './OurServicesComponents/ServicesCard';
-
-import { CgWebsite } from 'react-icons/cg';
-import { FaGooglePlay, FaBezierCurve } from 'react-icons/fa';
+import { getData } from '../../../../Components/FetchData';
 
 const OurServices = (props) => {
   var classname = 'OurServices dark';
   var classname1 = 'OurServices light';
 
-  const [Cards, setCards] = useState([]);
-
-  // const DATA = fetch('https://mahalaxmisanitary.com/test.json')
-  //   .then((res) => {
-  //     console.log(res);
-  //   })
-  //   .catch((err) => {
-  //     alert(err);
-  //   });
   useEffect(() => {
     fetch('https://mahalaxmisanitary.com/TestData.json')
       .then((res) => res.json())
@@ -29,12 +18,10 @@ const OurServices = (props) => {
       });
   }, []);
 
-  console.log(Cards);
+  // console.log(Cards);
 
   const CardComponent = () => {
     return Cards.map((a) => {
-      const Tag = a.icon;
-
       return (
         <ServicesCard
           key={a.id}
