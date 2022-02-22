@@ -5,7 +5,9 @@ const ServicesCard = (props) => {
   return (
     <div className="ServicesCardContainer col-md">
       <div className="ServicesCardBody text-left">
-        <div className="IconContainer">{props.icon}</div>
+        <div className="IconContainer">
+          <i class="fa-solid fa-browser"></i>
+        </div>
         <h3 className="pt-3">{props.Heading}</h3>
         <p className="lead pt-3 text-muted">{props.description}</p>
       </div>
