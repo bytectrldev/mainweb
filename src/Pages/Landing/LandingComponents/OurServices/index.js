@@ -18,7 +18,7 @@ const OurServices = (props) => {
       });
   }, []);
 
-  // console.log(Cards);
+  console.log(Cards);
 
   const CardComponent = () => {
     return Cards.map((a) => {

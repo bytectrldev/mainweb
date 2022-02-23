@@ -62,3 +62,7 @@
   box-shadow: var(--mainboxshadow);
   transition: 200ms;
 }
+
+#responsive-navbar-nav {
+  transition: 0.2s !important;
+}
