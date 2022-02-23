@@ -3,12 +3,12 @@ import { Container } from 'react-bootstrap';
 import ComponentHeading from '../ComponentHeading';
 import './OurServices.css';
 import ServicesCard from './OurServicesComponents/ServicesCard';
-import { getData } from '../../../../Components/FetchData';
 
 const OurServices = (props) => {
   var classname = 'OurServices dark';
   var classname1 = 'OurServices light';
   const [Cards, setCards] = useState([]);
+
   useEffect(() => {
     fetch('https://mahalaxmisanitary.com/TestData.json')
       .then((res) => res.json())
